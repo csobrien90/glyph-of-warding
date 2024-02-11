@@ -31,7 +31,7 @@ export default function MyComponent() {
 }
 
 // GlyphOfWarding.tsx (server side)
-import { getIpData, UserDataObject } from '@csobrien90/glyph-of-warding'
+import { getIpData, UserDataObject } from 'glyph-of-warding'
 import GlyphClient from './GlyphClient'
 
 export default async function GlyphOfWarding(): Promise<JSX.Element> {
@@ -60,7 +60,7 @@ export default async function GlyphOfWarding(): Promise<JSX.Element> {
 "use client"
 
 import { useEffect } from "react"
-import { GoW, IpData, IpDataError } from '@csobrien90/glyph-of-warding'
+import { GoW, IpData, IpDataError } from 'glyph-of-warding'
 
 export default function GlyphClient({ ipData, sendData }: { ipData: IpData | IpDataError, sendData: any }) {
 
