@@ -1,5 +1,5 @@
 {
-  "name": "@csobrien90/glyph-of-warding",
+  "name": "glyph-of-warding",
   "version": "0.1.0",
   "description": "A data collection component for Next.js",
   "main": "./dist/index.js",

@@ -75,6 +75,9 @@ describe('GlyphOfWarding', () => {
 		// Check if userAgent is initialized
 		expect(glyph.userAgent).toBeDefined();
 
+		// Check if referrer is initialized
+		expect(glyph.referrer).toBeDefined();
+
 		// Check if event listeners are added
 		expect(windowAddSpy).toHaveBeenCalledTimes(3);
 	});

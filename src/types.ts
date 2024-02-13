@@ -21,6 +21,7 @@ export interface ScrollEventSummary extends EventSummary {
 
 export interface UserDataObject {
 	userAgent: string
+	referrer: string
 	timeOnPage: number
 	ipData: IpData | null
 	events: EventSummary[]

@@ -4,6 +4,7 @@ export default class GlyphOfWarding {
 	// Properties
 	pageLoadTime: number
 	userAgent: string
+	referrer: string
 	ipData: IpData | null = null
 	events: EventSummary[] = []
 	sendDataCallback: (userData: UserDataObject) => void = () => {}
@@ -22,6 +23,9 @@ export default class GlyphOfWarding {
 
 		// Get the user agent
 		this.userAgent = navigator.userAgent || 'Unknown'
+
+		// Get the referrer
+		this.referrer = document.referrer || 'Unknown'
 
 		// Add event listeners
 		this.addEventListeners()
@@ -96,6 +100,7 @@ export default class GlyphOfWarding {
 		const timeOnPage = Date.now() - this.pageLoadTime
 		return {
 			userAgent: this.userAgent,
+			referrer: this.referrer,
 			timeOnPage,
 			ipData: this.ipData,
 			events: this.events
